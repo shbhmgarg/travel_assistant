@@ -162,7 +162,7 @@ You'll need Python 3.11+ and a free API key from
 [Google AI Studio](https://aistudio.google.com/).
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/shbhmgarg/travel_assistant
 cd travel_assistant
 
 python3 -m venv venv
