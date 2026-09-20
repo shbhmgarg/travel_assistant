@@ -1,5 +1,7 @@
 # AI Travel Planning Assistant — Singapore
 
+**Git Repository** - https://github.com/shbhmgarg/travel_assistant
+
 A travel assistant for Singapore that answers destination questions from a
 curated knowledge base and pulls in live weather and currency data when a
 question needs it. Ask about attractions and it looks them up in the
