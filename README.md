@@ -348,19 +348,13 @@ section, and the deliverables list. Going through them one by one:
 
 **Deliverables**
 
-15. **Source code in a Git repository.** Done — committed, `.env`
-    excluded via `.gitignore`.
-16. **A working application.** Done — runs via `streamlit run
-    streamlit_app.py` or `python agent.py`.
+15. **Source code in a Git repository.** - Done
+16. **A working application.** - Done
 17. **Knowledge-base documents, or clear instructions for obtaining
-    them.** Done — all 6 documents are committed under `data/`, so no
-    separate download step is needed.
+    them.** - Done
 18. **A README covering architecture, knowledge-base sources, RAG
     workflow, MCP tools, prompt and context strategy, and setup
-    instructions.** This document — see the sections above.
-19. **Sample questions and application responses.** Done — see "Sample
-    questions and responses" above, three real, unedited runs.
+    instructions.** - Done
+19. **Sample questions and application responses.** - Done 
 20. **A short demonstration showing RAG, MCP, a combined response, and
-    conversational context.** Done — to be recorded as a short screen
-    capture walking through the same scenarios shown above, plus a
-    follow-up question that relies on earlier conversation context.
+    conversational context.** - Done
