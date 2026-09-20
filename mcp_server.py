@@ -20,8 +20,17 @@ WEATHER_CODE_DESCRIPTIONS = {
 def describe_weather_code(code) -> str:
     return WEATHER_CODE_DESCRIPTIONS.get(code, f"Unknown conditions (code {code})")
 
-@mcp.tool()
+
+@mcp.tool(
+    description=(
+        "Get current conditions and a multi-day forecast for a city, "
+        "including temperature, humidity, rain/precipitation chance, "
+        "wind speed, and sunrise/sunset times. Use this for any "
+        "time-sensitive weather question."
+    )
+)
 async def get_weather_forecast(city: str, days: int = 3) -> dict:
+
     key = city.strip().lower()
     if key not in CITY_COORDINATES:
         return {
@@ -84,7 +93,13 @@ async def get_weather_forecast(city: str, days: int = 3) -> dict:
     }
 
 
-@mcp.tool()
+@mcp.tool(
+    description=(
+        "Convert an amount of money from one currency to another using "
+        "live, current exchange rates. Use this for any budget or "
+        "currency conversion question."
+    )
+)
 async def convert_currency(amount: float, from_currency: str, to_currency: str) -> dict:
     from_currency = from_currency.strip().upper()
     to_currency = to_currency.strip().upper()
