@@ -49,7 +49,7 @@ load_dotenv()
 
 VECTORSTORE_DIR = "vectorstore"
 EMBED_MODEL = "models/gemini-embedding-001"
-CHAT_MODEL = "gemini-3.6-flash"
+CHAT_MODEL = "gemini-flash-lite-latest"
 
 SYSTEM_PROMPT = """You are a helpful, careful Singapore travel-planning assistant.
 
