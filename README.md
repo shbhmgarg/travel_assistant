@@ -10,6 +10,20 @@ conversion and it calls a live API through MCP. Ask something that needs
 both — like a weather-adjusted itinerary with a converted budget — and it
 combines all of it into one answer, labeling what came from where.
 
+## Technology Stack
+ 
+| Component | Choice |
+|---|---|
+| Orchestration | LangChain (`create_agent`, tool-calling agent) |
+| LLM | Google Gemini — `gemini-flash-lite-latest` |
+| Embeddings | Google Gemini — `gemini-embedding-001` |
+| Vector store | FAISS (local, on-disk) |
+| MCP client | `langchain-mcp-adapters` (`MultiServerMCPClient`) |
+| MCP server | `mcp` Python SDK (`FastMCP`, pinned to `mcp<2` — see note below) |
+| Weather data | Open-Meteo (free, no key) |
+| Currency data | Frankfurter (free, no key) |
+| UI | Streamlit (chat interface) |
+
 ## Knowledge base
 
 Six Singapore travel resources were converted into Markdown files under
